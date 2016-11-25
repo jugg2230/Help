@@ -47,6 +47,7 @@
 
   <mappers>
     <mapper resource="sqlxml/HelpInfo.xml"/>
+    <mapper resource="sqlxml/LoginInfo.xml"/>
   </mappers>
 
 </configuration>

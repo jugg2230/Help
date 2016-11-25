@@ -12,8 +12,10 @@
           <element id="dir-copy" path="$PROJECT_DIR$/build/resources/main" />
         </element>
         <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: org.codehaus.groovy:groovy-all:2.3.11" />
+          <element id="library" level="project" name="Gradle: jstl:jstl:1.2" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-aop:4.2.4.RELEASE" />
-          <element id="library" level="project" name="Gradle: aopalliance:aopalliance:1.0" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-context:4.2.4.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-beans:4.2.4.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-web:4.2.4.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-webmvc:4.2.4.RELEASE" />
@@ -25,14 +27,12 @@
           <element id="library" level="project" name="Gradle: org.mybatis:mybatis-spring:1.2.3" />
           <element id="library" level="project" name="Gradle: org.mybatis:mybatis:3.3.0" />
           <element id="library" level="project" name="Gradle: junit:junit:4.12" />
-          <element id="library" level="project" name="Gradle: org.springframework:spring-context:4.2.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: com.google.code.gson:gson:2.6.2" />
+          <element id="library" level="project" name="Gradle: aopalliance:aopalliance:1.0" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-core:4.2.4.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-expression:4.2.4.RELEASE" />
           <element id="library" level="project" name="Gradle: org.hamcrest:hamcrest-core:1.3" />
-          <element id="library" level="project" name="Gradle: org.codehaus.groovy:groovy-all:2.3.11" />
-          <element id="library" level="project" name="Gradle: jstl:jstl:1.2" />
           <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.2" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.6.2/f1bc476cc167b18e66c297df599b2377131a8947/gson-2.6.2.jar" />
         </element>
       </element>
       <element id="directory" name="META-INF">
