@@ -38,9 +38,9 @@
       </transactionManager>
       <dataSource type="UNPOOLED">
         <property name="driver" value="com.mysql.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://127.0.0.1:3306/test"/>
+        <property name="url" value="jdbc:mysql://127.0.0.1:3306/dream"/>
         <property name="username" value="root"/>
-        <property name="password" value="root"/>
+        <property name="password" value="xujun"/>
       </dataSource>
     </environment>
   </environments>
