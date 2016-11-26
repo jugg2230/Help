@@ -34,9 +34,9 @@ public class HelpInfoDao {
         return helpInfoList;
     }
 
-    public static void main(String[] args) {
-        HelpInfoDao helpInfoDao = new HelpInfoDao();
-        System.out.println(helpInfoDao.queryHelpInfoList("Java",""));
-
-    }
+//    public static void main(String[] args) {
+//        HelpInfoDao helpInfoDao = new HelpInfoDao();
+//        System.out.println(helpInfoDao.queryHelpInfoList("Java",""));
+//
+//    }
 }

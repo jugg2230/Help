@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+       Copyright 2009-2012 the original author or authors.
+
+       Licensed under the Apache License, Version 2.0 (the "License");
+       you may not use this file except in compliance with the License.
+       You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+       Unless required by applicable law or agreed to in writing, software
+       distributed under the License is distributed on an "AS IS" BASIS,
+       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+       See the License for the specific language governing permissions and
+       limitations under the License.
+
+-->
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="UserInfo">
+
+  <resultMap type="bean.UserInfo" id="UserInfoResult">
+    <result column="UID" jdbcType="INTEGER" property="uid"/>
+    <result column="UNAME" jdbcType="VARCHAR" property="uname"/>
+    <result column="MOBILE" jdbcType="VARCHAR" property="mobile"/>
+    <result column="UINTRO" jdbcType="VARCHAR" property="uintro"/>
+    <result column="UAVATARURL" jdbcType="VARCHAR" property="uavatarurl"/>
+    <result column="UAVATARBASE64" jdbcType="VARCHAR" property="uavatarbase64"/>
+    <result column="AGE" jdbcType="INTEGER" property="age"/>
+    <result column="SCHOOL" jdbcType="VARCHAR" property="school"/>
+    <result column="SID" jdbcType="INTEGER" property="sid"/>
+    <result column="GENDER" jdbcType="VARCHAR" property="gender"/>
+    <result column="MAJOR" jdbcType="VARCHAR" property="major"/>
+    <result column="TOKEN" jdbcType="VARCHAR" property="token"/>
+  </resultMap>
+	
+  <sql id="columns">UID,UNAME,MOBILE,UINTRO,UAVATARURL,UAVATARBASE64,AGE,SCHOOL,SID,GENDER,MAJOR,TOKEN</sql>
+  
+  <insert id="insertUserInfo" parameterType="bean.UserInfo">
+    insert into userinfo(<include refid="columns"/>) values(#{uid},#{uname},#{mobile},#{uintro},#{uavatarurl},#{uavatarbase64},#{age},#{school},#{sid},#{gender},#{major},#{token})
+  </insert>
+  
+  <delete id="deleteOne" parameterType="int">
+  	delete from message where ID = #{_parameter}  
+  </delete>
+  
+  <delete id="deleteBatch" parameterType="java.util.List">
+  	delete from message where ID in(
+  		<foreach collection="list" item="item" separator=",">
+  			#{item}
+  		</foreach>
+  	)  
+  </delete>
+</mapper>
